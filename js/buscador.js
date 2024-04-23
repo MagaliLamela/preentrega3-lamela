@@ -34,7 +34,7 @@ inputBuscador.addEventListener("keypress", function (event) {
         localStorage.setItem("terminosBusqueda", terminosBusqueda);
 
         // Redirige a la página de resultados de búsqueda
-        window.location.href = "../html/resultados-busqueda.html";
+        window.location.href = "./html/resultados-busqueda.html";
     }
 });
 
@@ -55,7 +55,7 @@ if (window.location.pathname.includes("resultados-busqueda.html")) {
         const divProductoFiltrado = document.createElement("div");
         divProductoFiltrado.classList.add("card", "cardIndividual", "col-xl-3", "col-md-6", "col-sm-12", "h-100");
         divProductoFiltrado.innerHTML = `
-        <img src="${producto.imagen}" class="card-img-top mx-auto" alt="${producto.nombre}">
+        <img src=".${producto.imagen}" class="card-img-top mx-auto" alt="${producto.nombre}">
         <h2 class="card-title nombreProducto">${producto.nombre}</h2>
         <h3> <span> $${producto.precioAnterior} </span> | $${producto.precio} </h3>
         <button type="button" class="btnProductos" id="${producto.id}"> Añadir al Carrito </button>
