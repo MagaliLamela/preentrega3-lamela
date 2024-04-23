@@ -34,7 +34,7 @@ inputBuscador.addEventListener("keypress", function (event) {
         localStorage.setItem("terminosBusqueda", terminosBusqueda);
 
         // Redirige a la página de resultados de búsqueda
-        window.location.href = "/html/resultados-busqueda.html";
+        window.location.href = "https://magalilamela.github.io/preentrega3-lamela/html/resultados-busqueda.html";
     }
 });
 
