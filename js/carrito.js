@@ -57,7 +57,7 @@ function cargarProductosCarrito() {
             const tr = document.createElement("tr");
             tr.innerHTML = `
         <td class="celdaProducto">
-            <img class="imgCarrito" src="../${producto.imagen}" alt="${producto.nombre}">
+            <img class="imgCarrito" src=".${producto.imagen}" alt="${producto.nombre}">
             <h3>${producto.nombre}</h3>
         </td>
         <td>
